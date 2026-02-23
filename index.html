@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manu López — Emprendedor que enseña. Profesor que construye.</title>
+  <meta name="description" content="Manu López — Emprendedor, profesor, product leader. Construyo productos con IA, enseño a otros a hacerlo, y estudio Sociología porque la tecnología es para personas. Barcelona.">
+  <meta name="author" content="Manu López">
+  <meta property="og:title" content="Manu López — Emprendedor que enseña. Profesor que construye.">
+  <meta property="og:description" content="Construyo productos con IA, enseño a otros a hacerlo, y estudio Sociología porque la tecnología es para personas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://manulopeznunez.github.io">
+  <meta property="og:image" content="assets/og-image.png">
+  <link rel="canonical" href="https://manulopeznunez.github.io">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+  <canvas id="particles"></canvas>
+  <div class="liquid-blobs" aria-hidden="true">
+    <div class="liquid-blob liquid-blob--1"></div>
+    <div class="liquid-blob liquid-blob--2"></div>
+    <div class="liquid-blob liquid-blob--3"></div>
+    <div class="liquid-blob liquid-blob--4"></div>
+  </div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="scroll-progress"></div>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">ML</a>
+      <div class="nav__links">
+        <a href="#work" class="nav-link">Trabajo</a>
+        <a href="#experience" class="nav-link">Trayectoria</a>
+        <a href="#now" class="nav-link">Ahora</a>
+        <a href="#manifesto" class="nav-link">Manifiesto</a>
+        <a href="#contact" class="nav-link">Contacto</a>
+      </div>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="#manifesto" class="mobile-menu__link">Manifiesto</a>
+    <a href="#work" class="mobile-menu__link">Trabajo</a>
+    <a href="#experience" class="mobile-menu__link">Trayectoria</a>
+    <a href="#now" class="mobile-menu__link">Ahora</a>
+    <a href="#contact" class="mobile-menu__link">Contacto</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ====== HERO — Split layout ====== -->
+    <section class="hero">
+      <div class="container hero__split">
+        <div class="hero__text">
+          <div class="hero__badge reveal-hero" style="--delay: 0.1s">
+            <span class="hero__badge-dot"></span>
+            Abierto a oportunidades
+          </div>
+          <p class="hero__kicker reveal-hero" style="--delay: 0.25s">Hola, soy</p>
+          <h1 class="hero__name reveal-hero" style="--delay: 0.4s">Manu López</h1>
+          <p class="hero__typewriter reveal-hero" style="--delay: 0.6s">
+            <span class="hero__typewriter-pipe">|</span>
+            <span class="hero__typewriter-text">construyo productos con IA.</span>
+          </p>
+          <p class="hero__tagline reveal-hero" style="--delay: 0.75s">Product leader y emprendedor apasionado por los <strong>productos con IA</strong>. Ayudo a empresas a pasar de la idea al producto escalable — combinando visión estratégica con ejecución técnica real.</p>
+          <div class="hero__cta reveal-hero" style="--delay: 0.9s">
+            <a href="#contact" class="btn btn--primary">Hablemos</a>
+            <a href="#experience" class="btn btn--secondary">Mi trayectoria</a>
+          </div>
+        </div>
+        <div class="hero__visual reveal-hero" style="--delay: 0.5s">
+          <div class="hero__code-editor">
+            <div class="code-editor__header">
+              <div class="code-editor__dots">
+                <span class="code-editor__dot code-editor__dot--red"></span>
+                <span class="code-editor__dot code-editor__dot--yellow"></span>
+                <span class="code-editor__dot code-editor__dot--green"></span>
+              </div>
+              <span class="code-editor__filename">manu-profile.js</span>
+            </div>
+            <div class="code-editor__body">
+              <pre><code><span class="code-comment">// ¿quién es este tío?</span>
+<span class="code-keyword">const</span> <span class="code-var">manu</span> = {
+  <span class="code-key">role</span>: <span class="code-string">"AI Product Leader"</span>,
+  <span class="code-key">location</span>: <span class="code-string">"Barcelona"</span>,
+  <span class="code-key">superpoder</span>: <span class="code-string">"Estrategia + código"</span>,
+  <span class="code-key">tracks</span>: [<span class="code-string">"Emprendedor"</span>, <span class="code-string">"Profesor"</span>, <span class="code-string">"Sociólogo"</span>],
+  <span class="code-key">equipo</span>: <span class="code-number">20</span>+,
+  <span class="code-key">construye_con</span>: <span class="code-string">"Python, RAG, LLMs"</span>,
+  <span class="code-key">estado</span>: <span class="code-string">"Creando algo nuevo"</span>
+};
+
+<span class="code-prompt">$</span> <span class="code-var">manu</span>.<span class="code-fn">ready</span>() <span class="code-comment">// siempre ✓</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </section>
+
+    <!-- ====== LOGO BAR ====== -->
+    <div class="logo-bar reveal">
+      <div class="container">
+        <div class="logo-bar__track-wrapper">
+          <div class="logo-bar__track">
+            <img src="assets/logos/lookiero.png" alt="Lookiero" class="logo-bar__logo logo-bar__logo--invert" loading="lazy">
+            <img src="assets/logos/colvin.png" alt="Colvin" class="logo-bar__logo" loading="lazy">
+            <img src="assets/logos/esade.svg" alt="Esade" class="logo-bar__logo" loading="lazy">
+            <img src="assets/logos/ub.png" alt="Universitat de Barcelona" class="logo-bar__logo" loading="lazy">
+            <img src="assets/logos/herocamp.svg" alt="The Hero Camp" class="logo-bar__logo" loading="lazy">
+            <img src="assets/logos/eoi.png" alt="EOI" class="logo-bar__logo" loading="lazy">
+            <img src="assets/logos/lookiero.png" alt="Lookiero" class="logo-bar__logo logo-bar__logo--invert" loading="lazy" aria-hidden="true">
+            <img src="assets/logos/colvin.png" alt="Colvin" class="logo-bar__logo" loading="lazy" aria-hidden="true">
+            <img src="assets/logos/esade.svg" alt="Esade" class="logo-bar__logo" loading="lazy" aria-hidden="true">
+            <img src="assets/logos/ub.png" alt="Universitat de Barcelona" class="logo-bar__logo" loading="lazy" aria-hidden="true">
+            <img src="assets/logos/herocamp.svg" alt="The Hero Camp" class="logo-bar__logo" loading="lazy" aria-hidden="true">
+            <img src="assets/logos/eoi.png" alt="EOI" class="logo-bar__logo" loading="lazy" aria-hidden="true">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== IMPACT NUMBERS ====== -->
+    <section class="numbers reveal">
+      <div class="container">
+        <div class="numbers__grid">
+          <div class="numbers__item">
+            <span class="numbers__value" data-target="20">0</span>
+            <span class="numbers__prefix">+</span>
+            <span class="numbers__label">personas lideradas como VP</span>
+          </div>
+          <div class="numbers__item">
+            <span class="numbers__value" data-target="4">0</span>
+            <span class="numbers__label">squads de producto y ML</span>
+          </div>
+          <div class="numbers__item">
+            <span class="numbers__value" data-target="200">0</span>
+            <span class="numbers__prefix">+</span>
+            <span class="numbers__label">profesionales formados</span>
+          </div>
+          <div class="numbers__item">
+            <span class="numbers__value" data-target="3">0</span>
+            <span class="numbers__label">productos IA construidos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== SHOWREEL — Video ====== -->
+    <section class="showreel">
+      <div class="container">
+        <div class="showreel__frame reveal">
+          <div class="showreel__bg" aria-hidden="true">
+            <div class="showreel__blob showreel__blob--1"></div>
+            <div class="showreel__blob showreel__blob--2"></div>
+            <div class="showreel__blob showreel__blob--3"></div>
+          </div>
+          <div class="showreel__content">
+            <button class="showreel__play" aria-label="Reproducir video">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+                <circle cx="36" cy="36" r="35" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+                <circle cx="36" cy="36" r="35" stroke="url(#play-grad)" stroke-width="1.5" stroke-dasharray="220" stroke-dashoffset="220" class="showreel__circle"/>
+                <polygon points="30,22 30,50 52,36" fill="white"/>
+                <defs><linearGradient id="play-grad" x1="0" y1="0" x2="72" y2="72"><stop stop-color="#f97316"/><stop offset="1" stop-color="#eab308"/></linearGradient></defs>
+              </svg>
+            </button>
+            <p class="showreel__caption">90" sobre quién soy y por qué hago lo que hago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== FEATURED WORK — Cards con resultados ====== -->
+    <section id="work" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title reveal">Lo que construyo</h2>
+        <div class="work-grid">
+
+          <article class="work-card reveal" data-tilt>
+            <div class="work-card__img">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop&auto=format" alt="Dashboard SaaS IA" loading="lazy">
+            </div>
+            <span class="meta">Ahora mismo · Fundador</span>
+            <h3>SaaS con IA, de cero a producción</h3>
+            <p class="work-card__result">De la idea a producción en 6 meses. Full-stack, solo.</p>
+            <p>Producto IA-nativo desde la arquitectura: RAG con bases de datos vectoriales, orquestación de LLMs (OpenAI, Anthropic), workflows con Prefect, full-stack Python/FastAPI + NextJS, Docker, CI/CD.</p>
+            <div class="work-card__tags">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>NextJS</span>
+              <span>Docker</span>
+              <span>RAG</span>
+            </div>
+          </article>
+
+          <article class="work-card reveal" data-tilt>
+            <div class="work-card__img">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=300&fit=crop&auto=format" alt="Fashion tech" loading="lazy">
+            </div>
+            <span class="meta">Lookiero · VP of Product</span>
+            <h3>IA en fashion-tech a escala</h3>
+            <p class="work-card__result">+20 personas, 4 squads, estrategia alineada con EBITDA.</p>
+            <p>Lideré la organización de producto completa incluyendo equipos de ML. Pipelines de deep learning para inferencia en real-time y batch en Databricks. Modelos de colaboración inter-squad para optimización de revenue y margen.</p>
+            <div class="work-card__tags">
+              <span>Product Strategy</span>
+              <span>ML Pipelines</span>
+              <span>Databricks</span>
+              <span>Liderazgo</span>
+            </div>
+          </article>
+
+          <article class="work-card reveal" data-tilt>
+            <div class="work-card__img">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=300&fit=crop&auto=format" alt="Growth analytics" loading="lazy">
+            </div>
+            <span class="meta">Colvin · Growth → Senior PM</span>
+            <h3>Motor de crecimiento desde cero</h3>
+            <p class="work-card__result">Cultura de experimentación desde cero: A/B testing, CRO, retención.</p>
+            <p>Monté el framework de experimentación: A/B testing, programa de CRO, loops de retención. Después lideré implementación de ERPs (OpenBravo, Netsuite Oracle) y modelos de forecasting.</p>
+            <div class="work-card__tags">
+              <span>Growth</span>
+              <span>A/B Testing</span>
+              <span>CRO</span>
+              <span>ERP</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== DOMINIOS — Radar chart ====== -->
+    <section id="domains" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Dónde me muevo</h2>
+        <p class="section__subtitle reveal">No solo producto. Entiendo los dominios con los que trabajo — desde la ingeniería hasta las finanzas.</p>
+        <div class="radar reveal">
+          <div class="radar__chart-wrapper">
+            <svg class="radar__svg" viewBox="0 0 500 500" aria-hidden="true">
+              <defs>
+                <linearGradient id="radar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f97316" stop-opacity="0.25"/>
+                  <stop offset="100%" stop-color="#eab308" stop-opacity="0.15"/>
+                </linearGradient>
+                <linearGradient id="radar-stroke-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f97316"/>
+                  <stop offset="100%" stop-color="#eab308"/>
+                </linearGradient>
+              </defs>
+              <g class="radar__grid"></g>
+              <g class="radar__axes"></g>
+              <polygon class="radar__area" fill="url(#radar-grad)" stroke="url(#radar-stroke-grad)" stroke-width="2"/>
+              <g class="radar__dots"></g>
+            </svg>
+            <div class="radar__labels"></div>
+          </div>
+          <div class="radar__tooltip" aria-hidden="true">
+            <span class="radar__tooltip-name"></span>
+            <span class="radar__tooltip-level"></span>
+            <p class="radar__tooltip-skills"></p>
+          </div>
+        </div>
+        <div class="radar__seeking reveal">
+          <div class="seeking-pitch">
+            <div class="seeking-pitch__content">
+              <span class="meta">Disponible · Part-time</span>
+              <h3 class="seeking-pitch__title">Busco equipos que quieran dar el salto.</h3>
+              <p class="seeking-pitch__text">Ayudo a empresas a transformar sus equipos humanos en equipos <strong>humanos + agentes de IA</strong>. También a potenciar organizaciones de producto — desde estrategia y experimentación hasta ejecución real. Sin humo, con resultados.</p>
+              <div class="seeking-pitch__tags">
+                <span>Estrategia de producto</span>
+                <span>Agentes de IA</span>
+                <span>Experimentación</span>
+                <span>Liderazgo de equipos</span>
+              </div>
+              <a href="#contact" class="btn btn--primary seeking-pitch__cta">Hablemos</a>
+            </div>
+          </div>
+          <p class="radar__seeking-label">En sectores como</p>
+          <div class="seeking-grid">
+            <div class="seeking-card" data-sector="ciberseguridad">
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop&auto=format" alt="Ciberseguridad" loading="lazy">
+              <div class="seeking-card__overlay"></div>
+              <div class="seeking-card__content">
+                <h4>Ciberseguridad</h4>
+                <p>Proteger lo que importa</p>
+              </div>
+            </div>
+            <div class="seeking-card" data-sector="agrotech">
+              <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&h=400&fit=crop&auto=format" alt="Agrotech" loading="lazy">
+              <div class="seeking-card__overlay"></div>
+              <div class="seeking-card__content">
+                <h4>Agrotech</h4>
+                <p>Tecnología que alimenta</p>
+              </div>
+            </div>
+            <div class="seeking-card" data-sector="ai-agents">
+              <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&h=400&fit=crop&auto=format" alt="AI Agents" loading="lazy">
+              <div class="seeking-card__overlay"></div>
+              <div class="seeking-card__content">
+                <h4>AI Agents</h4>
+                <p>La próxima interfaz</p>
+              </div>
+            </div>
+            <div class="seeking-card" data-sector="datacenters">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&auto=format" alt="Datacenters" loading="lazy">
+              <div class="seeking-card__overlay"></div>
+              <div class="seeking-card__content">
+                <h4>Datacenters</h4>
+                <p>La infraestructura invisible</p>
+              </div>
+            </div>
+            <div class="seeking-card" data-sector="materiales">
+              <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=400&fit=crop&auto=format" alt="Ingeniería de materiales" loading="lazy">
+              <div class="seeking-card__overlay"></div>
+              <div class="seeking-card__content">
+                <h4>Ingeniería de materiales</h4>
+                <p>Construir el futuro, literalmente</p>
+              </div>
+            </div>
+            <div class="seeking-card" data-sector="space">
+              <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=400&fit=crop&auto=format" alt="Space" loading="lazy">
+              <div class="seeking-card__overlay"></div>
+              <div class="seeking-card__content">
+                <h4>Space</h4>
+                <p>La última frontera</p>
+              </div>
+            </div>
+            <div class="seeking-card" data-sector="biotech">
+              <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&h=400&fit=crop&auto=format" alt="Biotech" loading="lazy">
+              <div class="seeking-card__overlay"></div>
+              <div class="seeking-card__content">
+                <h4>Biotech</h4>
+                <p>Genómica, proteómica, metabolómica</p>
+              </div>
+            </div>
+            <div class="seeking-card" data-sector="healthtech">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop&auto=format" alt="HealthTech" loading="lazy">
+              <div class="seeking-card__overlay"></div>
+              <div class="seeking-card__content">
+                <h4>HealthTech</h4>
+                <p>Salud digital para personas</p>
+              </div>
+            </div>
+            <div class="seeking-card" data-sector="edtech">
+              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=400&fit=crop&auto=format" alt="EdTech" loading="lazy">
+              <div class="seeking-card__overlay"></div>
+              <div class="seeking-card__content">
+                <h4>EdTech</h4>
+                <p>Reinventar cómo aprendemos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== TRAYECTORIA — Horizontal Roadmap ====== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Trayectoria</h2>
+
+        <!-- CARRERA — 3 lanes -->
+        <div class="roadmap reveal">
+          <h3 class="roadmap__heading">Carrera</h3>
+          <div class="roadmap__axis" aria-hidden="true">
+            <span>2012</span><span>2013</span><span>2014</span><span>2015</span><span>2016</span><span>2017</span><span>2018</span><span>2019</span><span>2020</span><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span>
+          </div>
+
+          <!-- Lane: Emprendimiento -->
+          <div class="roadmap__lane">
+            <span class="roadmap__lane-label">Emprendimiento</span>
+            <div class="roadmap__lane-grid">
+              <div class="roadmap__bar roadmap__bar--accent roadmap__bar--clickable" style="grid-column: 3 / 11" data-tooltip="Primer negocio propio · 2013–2017 · Emprender desde la universidad" data-case="primer-negocio">
+                <span class="roadmap__bar-text">Primer negocio</span>
+              </div>
+              <div class="roadmap__bar roadmap__bar--now roadmap__bar--clickable" style="grid-column: 27 / 30" data-tooltip="Fundador — SaaS con IA · De la idea a producción en 6 meses" data-case="saas-ia">
+                <span class="roadmap__bar-text">SaaS IA</span>
+                <span class="roadmap__pulse"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lane: Profesional -->
+          <div class="roadmap__lane">
+            <span class="roadmap__lane-label">Profesional</span>
+            <div class="roadmap__lane-grid">
+              <div class="roadmap__bar roadmap__bar--default roadmap__bar--clickable" style="grid-column: 3 / 11" data-tooltip="Camarero, venta puerta fría, trabajos parciales · Compatibilizando con carrera y emprendimiento" data-case="primeros-trabajos">
+                <span class="roadmap__bar-text">Hostelería, ventas</span>
+              </div>
+              <div class="roadmap__bar roadmap__bar--default roadmap__bar--clickable" style="grid-column: 11 / 15" data-tooltip="Product Manager B2B SaaS · BuboCar · Pivote a B2B SaaS" data-case="bubocar">
+                <span class="roadmap__bar-text">BuboCar</span>
+              </div>
+              <div class="roadmap__bar roadmap__bar--accent roadmap__bar--clickable" style="grid-column: 15 / 20" data-tooltip="Growth PM → Senior PM · Colvin · A/B testing, CRO, retención" data-case="colvin">
+                <span class="roadmap__bar-text">Colvin</span>
+              </div>
+              <div class="roadmap__bar roadmap__bar--accent roadmap__bar--clickable" style="grid-column: 20 / 23" data-tooltip="Senior PM AI → Lead PM · Lookiero · Deep learning, Databricks" data-case="lookiero-pm">
+                <span class="roadmap__bar-text">Lookiero PM</span>
+              </div>
+              <div class="roadmap__bar roadmap__bar--highlight roadmap__bar--clickable" style="grid-column: 23 / 27" data-tooltip="VP of Product · Lookiero · +20 personas, 4 squads, ML strategy" data-case="lookiero-vp">
+                <span class="roadmap__bar-text">VP Product</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lane: Profesor -->
+          <div class="roadmap__lane">
+            <span class="roadmap__lane-label">Profesor</span>
+            <div class="roadmap__lane-grid">
+              <div class="roadmap__bar roadmap__bar--teach roadmap__bar--clickable" style="grid-column: 17 / 30" data-tooltip="Product Trainer & Coach · The Hero Camp · Desde 2020" data-case="herocamp">
+                <span class="roadmap__bar-text">Hero Camp</span>
+                <span class="roadmap__pulse"></span>
+              </div>
+            </div>
+            <div class="roadmap__lane-grid roadmap__lane-grid--sub">
+              <div class="roadmap__bar roadmap__bar--teach-alt roadmap__bar--clickable" style="grid-column: 21 / 25" data-tooltip="Profesor Producto y Marketing · EOI · Postgrado" data-case="eoi">
+                <span class="roadmap__bar-text">EOI</span>
+              </div>
+              <div class="roadmap__bar roadmap__bar--teach roadmap__bar--clickable" style="grid-column: 25 / 30" data-tooltip="Profesor Asociado · Universitat de Barcelona · Marketing Analytics" data-case="ub">
+                <span class="roadmap__bar-text">UB</span>
+                <span class="roadmap__pulse"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORMACIÓN — Education roadmap -->
+        <div class="roadmap roadmap--edu reveal">
+          <h3 class="roadmap__heading">Formación</h3>
+          <p class="roadmap__subtitle">De la ingeniería industrial a la sociología — formación transversal por convicción, no por casualidad.</p>
+          <div class="roadmap__axis" aria-hidden="true">
+            <span>2012</span><span>2013</span><span>2014</span><span>2015</span><span>2016</span><span>2017</span><span>2018</span><span>2019</span><span>2020</span><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span>
+          </div>
+
+          <!-- Lane: Universitaria -->
+          <div class="roadmap__lane">
+            <span class="roadmap__lane-label">Universitaria</span>
+            <div class="roadmap__lane-grid">
+              <div class="roadmap__bar roadmap__bar--highlight roadmap__bar--clickable" style="grid-column: 1 / 11" data-tooltip="Universidad de Sevilla · Ingeniería Industrial · La base técnica de todo" data-case="ingenieria">
+                <span class="roadmap__bar-text">Ing. Industrial — U. Sevilla</span>
+              </div>
+              <div class="roadmap__bar roadmap__bar--now roadmap__bar--clickable" style="grid-column: 25 / 30" data-tooltip="UNED · Sociología · Entender a las personas antes de diseñar para ellas" data-case="sociologia">
+                <span class="roadmap__bar-text">Sociología — UNED</span>
+                <span class="roadmap__pulse"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lane: Ejecutiva -->
+          <div class="roadmap__lane">
+            <span class="roadmap__lane-label">Ejecutiva</span>
+            <div class="roadmap__lane-grid">
+              <div class="roadmap__bar roadmap__bar--edu" style="grid-column: 15 / 17" data-tooltip="The Hero Camp · Digital Product Management · Mi framework de producto">
+                <span class="roadmap__bar-text">Hero Camp</span>
+              </div>
+              <div class="roadmap__bar roadmap__bar--edu" style="grid-column: 17 / 19" data-tooltip="IEBS · Marketing Digital · Funnels, attribution, CRO">
+                <span class="roadmap__bar-text">IEBS</span>
+              </div>
+              <div class="roadmap__bar roadmap__bar--edu-premium roadmap__bar--clickable" style="grid-column: 21 / 23" data-tooltip="Esade · Liderazgo Influyente · Liderar sin autoridad jerárquica" data-case="esade">
+                <span class="roadmap__bar-text">Esade</span>
+              </div>
+            </div>
+            <div class="roadmap__lane-grid roadmap__lane-grid--sub">
+              <div class="roadmap__bar roadmap__bar--edu" style="grid-column: 15 / 18" data-tooltip="ThePowerMBA · Marketing · Growth como sistema">
+                <span class="roadmap__bar-text">PowerMBA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="roadmap__certs">
+            <span class="cert-tag">Docker DevOps</span>
+            <span class="cert-tag">Cloud Computing</span>
+            <span class="cert-tag">Scrum & Agile</span>
+            <span class="cert-tag">AWS</span>
+            <span class="cert-tag">Marketing Digital</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====== NOW — Bento grid ====== -->
+    <section id="now" class="section reveal">
+      <div class="container">
+        <h2 class="section__title">Ahora mismo</h2>
+        <div class="bento">
+
+          <div class="bento__card bento__card--large reveal">
+            <span class="bento__label meta">Construyendo</span>
+            <h3>SaaS con IA — de cero a producción</h3>
+            <p>RAG + orquestación de LLMs, bases vectoriales, full-stack Python/NextJS. Todo el ciclo: idea, arquitectura, código, despliegue.</p>
+            <!-- SVG: Diagrama de arquitectura simplificado -->
+            <svg class="bento__svg" viewBox="0 0 320 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="0" y="30" width="70" height="40" rx="6" stroke="var(--accent)" stroke-width="1.5" opacity="0.5"/>
+              <text x="35" y="55" font-family="Inter, sans-serif" font-size="11" fill="var(--accent)" text-anchor="middle" opacity="0.7">LLM</text>
+              <line x1="70" y1="50" x2="105" y2="50" stroke="var(--accent)" stroke-width="1.5" opacity="0.3" stroke-dasharray="4 3"/>
+              <polygon points="100,46 108,50 100,54" fill="var(--accent)" opacity="0.4"/>
+              <rect x="110" y="30" width="70" height="40" rx="6" stroke="var(--accent)" stroke-width="1.5" opacity="0.5"/>
+              <text x="145" y="55" font-family="Inter, sans-serif" font-size="11" fill="var(--accent)" text-anchor="middle" opacity="0.7">RAG</text>
+              <line x1="180" y1="50" x2="215" y2="50" stroke="var(--accent)" stroke-width="1.5" opacity="0.3" stroke-dasharray="4 3"/>
+              <polygon points="210,46 218,50 210,54" fill="var(--accent)" opacity="0.4"/>
+              <rect x="220" y="30" width="70" height="40" rx="6" stroke="var(--accent)" stroke-width="1.5" opacity="0.5"/>
+              <text x="255" y="55" font-family="Inter, sans-serif" font-size="11" fill="var(--accent)" text-anchor="middle" opacity="0.7">App</text>
+            </svg>
+          </div>
+
+          <div class="bento__card bento__card--teach bento__card--has-bg reveal">
+            <img class="bento__bg" src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop&auto=format" alt="" loading="lazy" aria-hidden="true">
+            <div class="bento__bg-overlay"></div>
+            <div class="bento__content">
+              <span class="bento__label meta">Enseñando</span>
+              <h3>Universitat de Barcelona</h3>
+              <p>Marketing Analytics y Digital Business Models.</p>
+            </div>
+          </div>
+
+          <div class="bento__card bento__card--study bento__card--has-bg reveal">
+            <img class="bento__bg" src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=600&h=400&fit=crop&auto=format" alt="" loading="lazy" aria-hidden="true">
+            <div class="bento__bg-overlay"></div>
+            <div class="bento__content">
+              <span class="bento__label meta">Estudiando</span>
+              <h3>Sociología · UNED</h3>
+              <p>Porque la tecnología es para personas.</p>
+            </div>
+          </div>
+
+          <div class="bento__card bento__card--explore bento__card--has-bg reveal">
+            <img class="bento__bg" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop&auto=format" alt="" loading="lazy" aria-hidden="true">
+            <div class="bento__bg-overlay"></div>
+            <div class="bento__content">
+              <span class="bento__label meta">Explorando</span>
+              <h3>Agentes de IA</h3>
+              <p>Orquestación multi-modelo, workflows autónomos, el futuro de la interacción humano-máquina.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== MANIFESTO — Scrollytelling ====== -->
+    <section id="manifesto" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">En qué creo</h2>
+
+        <div class="manifesto__block reveal">
+          <div class="manifesto__content">
+            <h3>La IA no es magia. Es una herramienta.</h3>
+            <p>Y como toda herramienta, hay que saber usarla. No necesitas un equipo de PhDs para que tu empresa use IA. Necesitas a alguien que entienda tu problema y sepa qué tecnología lo resuelve. Eso es lo que hago.</p>
+          </div>
+          <aside class="manifesto__pullquote" aria-hidden="true">
+            <span>"No necesitas PhDs. Necesitas a alguien que entienda tu problema."</span>
+          </aside>
+        </div>
+
+        <div class="manifesto__block reveal">
+          <div class="manifesto__content">
+            <h3>Producto primero. Tecnología después.</h3>
+            <p>No metas IA porque mola. Métela porque resuelve algo. He visto demasiados proyectos que empiezan por la tecnología y buscan un problema después. Siempre al revés: primero el usuario, luego la solución.</p>
+          </div>
+          <aside class="manifesto__pullquote" aria-hidden="true">
+            <span>"No metas IA porque mola. Métela porque resuelve algo."</span>
+          </aside>
+        </div>
+
+        <div class="manifesto__block reveal">
+          <div class="manifesto__content">
+            <h3>El PM que codea tiene superpoderes.</h3>
+            <p>No me quedo en las slides. Arquitecto RAG pipelines, orquesto LLMs, despliego con Docker. Cuando puedes hablar el idioma de negocio y el de ingeniería, todo va más rápido y mejor.</p>
+          </div>
+          <aside class="manifesto__pullquote" aria-hidden="true">
+            <span>"Hablo el idioma de negocio y el de ingeniería."</span>
+          </aside>
+        </div>
+
+        <div class="manifesto__block reveal">
+          <div class="manifesto__content">
+            <h3>Construir + enseñar = multiplicar impacto.</h3>
+            <p>Podría solo construir productos. Pero enseñar en la universidad y formar product managers me obliga a pensar más claro, a cuestionar mis propias ideas, y a multiplicar el impacto. Soy emprendedor y profesor porque las dos cosas se alimentan.</p>
+          </div>
+          <aside class="manifesto__pullquote" aria-hidden="true">
+            <span>"Soy emprendedor y profesor porque las dos cosas se alimentan."</span>
+          </aside>
+        </div>
+
+        <div class="manifesto__block reveal">
+          <div class="manifesto__content">
+            <h3>La tecnología es para personas.</h3>
+            <p>Estudio Sociología siendo ingeniero. Porque si no entiendes a las personas, la tecnología más brillante no sirve de nada. Los mejores productos nacen de entender comportamiento humano, no solo de optimizar algoritmos.</p>
+          </div>
+          <aside class="manifesto__pullquote" aria-hidden="true">
+            <span>"Si no entiendes a las personas, la tecnología no sirve de nada."</span>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====== CONTACT — Con personalidad ====== -->
+    <section id="contact" class="section section--alt">
+      <div class="container contact-container">
+        <h2 class="contact__heading gradient-text reveal">Hablemos.</h2>
+        <p class="contact__text reveal">¿Quieres debatir sobre producto, IA, o por qué un ingeniero estudia sociología? Escríbeme.</p>
+        <div class="contact__links reveal">
+          <div class="contact__socials">
+            <a href="https://www.linkedin.com/in/director-of-product-manu-lopez/" target="_blank" rel="noopener" class="contact__social" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/manulopeznunez" target="_blank" rel="noopener" class="contact__social" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Social proof — Marquee -->
+        <div class="marquee reveal" aria-label="Empresas y organizaciones">
+          <p class="marquee__label meta">Han confiado en mí</p>
+          <div class="marquee__track-wrapper">
+            <div class="marquee__track">
+              <span class="marquee__item">Lookiero</span>
+              <span class="marquee__sep" aria-hidden="true">·</span>
+              <span class="marquee__item">Colvin</span>
+              <span class="marquee__sep" aria-hidden="true">·</span>
+              <span class="marquee__item">Esade</span>
+              <span class="marquee__sep" aria-hidden="true">·</span>
+              <span class="marquee__item">Universitat de Barcelona</span>
+              <span class="marquee__sep" aria-hidden="true">·</span>
+              <span class="marquee__item">The Hero Camp</span>
+              <span class="marquee__sep" aria-hidden="true">·</span>
+              <span class="marquee__item">EOI</span>
+              <span class="marquee__sep" aria-hidden="true">·</span>
+              <span class="marquee__item">Lookiero</span>
+              <span class="marquee__sep" aria-hidden="true">·</span>
+              <span class="marquee__item">Colvin</span>
+              <span class="marquee__sep" aria-hidden="true">·</span>
+              <span class="marquee__item">Esade</span>
+              <span class="marquee__sep" aria-hidden="true">·</span>
+              <span class="marquee__item">Universitat de Barcelona</span>
+              <span class="marquee__sep" aria-hidden="true">·</span>
+              <span class="marquee__item">The Hero Camp</span>
+              <span class="marquee__sep" aria-hidden="true">·</span>
+              <span class="marquee__item">EOI</span>
+              <span class="marquee__sep" aria-hidden="true">·</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SVG: Skyline Barcelona simplificado -->
+        <div class="contact__skyline reveal" aria-hidden="true">
+          <svg viewBox="0 0 600 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Sagrada Familia -->
+            <rect x="120" y="20" width="8" height="60" fill="var(--accent)" opacity="0.08"/>
+            <rect x="132" y="15" width="8" height="65" fill="var(--accent)" opacity="0.1"/>
+            <rect x="144" y="25" width="8" height="55" fill="var(--accent)" opacity="0.08"/>
+            <polygon points="136,0 130,15 142,15" fill="var(--accent)" opacity="0.12"/>
+            <!-- Torre Agbar -->
+            <rect x="240" y="30" width="14" height="50" rx="7" fill="var(--accent)" opacity="0.08"/>
+            <ellipse cx="247" cy="30" rx="7" ry="10" fill="var(--accent)" opacity="0.06"/>
+            <!-- W Hotel (Vela) -->
+            <path d="M340 80 Q345 20 360 25 Q370 30 365 80" fill="var(--accent)" opacity="0.07"/>
+            <!-- Generic buildings -->
+            <rect x="60" y="50" width="20" height="30" fill="var(--accent)" opacity="0.05"/>
+            <rect x="85" y="40" width="15" height="40" fill="var(--accent)" opacity="0.04"/>
+            <rect x="180" y="45" width="25" height="35" fill="var(--accent)" opacity="0.05"/>
+            <rect x="210" y="55" width="12" height="25" fill="var(--accent)" opacity="0.04"/>
+            <rect x="280" y="50" width="18" height="30" fill="var(--accent)" opacity="0.04"/>
+            <rect x="300" y="45" width="14" height="35" fill="var(--accent)" opacity="0.05"/>
+            <rect x="400" y="55" width="22" height="25" fill="var(--accent)" opacity="0.04"/>
+            <rect x="430" y="48" width="16" height="32" fill="var(--accent)" opacity="0.05"/>
+            <rect x="460" y="52" width="20" height="28" fill="var(--accent)" opacity="0.04"/>
+            <rect x="500" y="58" width="18" height="22" fill="var(--accent)" opacity="0.03"/>
+            <rect x="530" y="55" width="14" height="25" fill="var(--accent)" opacity="0.04"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Manu López · Barcelona · 2026</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
